@@ -13,7 +13,7 @@ Containerized API service built with FastAPI on top of the brawldogg wrapper for
 
 ### Option A: Local Development
 ```bash
-# git clone <repo-url> && cd brawldogg-api
+git clone git@github.com:kunlxo/brawldogg-api.git && cd brawldogg-api
 poetry install
 export BRAWL_STARS_TOKEN="YOUR_API_KEY_HERE"
 poetry run uvicorn server:app --reload --host 0.0.0.0 --port 8000
@@ -21,6 +21,7 @@ poetry run uvicorn server:app --reload --host 0.0.0.0 --port 8000
 
 ### Option B: Build & Run Using Dockerfile
 ```bash
+git clone git@github.com:kunlxo/brawldogg-api.git && cd brawldogg-api
 docker build -t brawldogg-api .
 docker run -d \
   -p 8000:8000 \
