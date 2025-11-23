@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "brawldogg-api"
+version = "0.1.0"
+description = "FastAPI application consuming the brawldogg API wrapper"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+python-dotenv = "^1.0.1"
+brawldogg = {git = "https://github.com/kunlxo/brawldogg.git"}
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.1"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
