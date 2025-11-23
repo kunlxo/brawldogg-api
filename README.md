@@ -1,4 +1,4 @@
-# BrawlDogg API Wrapper
+# BrawlDogg FastAPI
 
 Containerized API service built with FastAPI on top of the brawldogg wrapper for Brawl Stars.
 
